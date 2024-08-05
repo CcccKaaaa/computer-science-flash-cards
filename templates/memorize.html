@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="panel panel-primary cardBack">
-                <div class="panel-body">
+                <div class="panel-body" style="font-size:medium;">
                     <div class="alignContainer">
                         <div class="alignMiddle frontText">
                             {% if card.type == 1 %}
@@ -48,7 +48,7 @@
                                     </div>
                                 {% endif %}
                             {% else %}
-                                <pre><code>{{ card.back|escape }}</code></pre>
+                                <div class="alignMiddle frontText">{{ card.back|replace("\n", "<br />")|safe }}</div>
                             {% endif %}
                         </div>
                     </div>
