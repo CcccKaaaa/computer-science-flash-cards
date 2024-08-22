@@ -97,6 +97,13 @@
                 <i class="fa fa-bookmark"></i>
                 bookmark this card (#{{ card.id }})
             </a>
+            <br/>
+             <a href="{{ url_for('edit', card_id=card.id, card_type=card_type) }}"
+                style="margin-top: 10px;"
+                class="btn btn-warning btn-default btn-sm">
+                <i class="fa fa-edit"></i>
+                Edit Card
+            </a>
 
         </div>
     </div>
